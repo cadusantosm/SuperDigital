@@ -71,6 +71,10 @@ POST: api/ContaCorrente
 `/internal/swagger`
 
 
+## Execução
+ - `docker-compose up`
+    > O comando acima executará o projeto em container docker na porta `http` padrão.
+
 ## O que é Domain driven design
  
 É uma abordagem de desenvolvimento de software que se baseia em fazer refletir seu software mais próximo do contexto no mundo real.

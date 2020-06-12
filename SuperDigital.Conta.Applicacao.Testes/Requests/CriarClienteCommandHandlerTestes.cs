@@ -13,6 +13,11 @@ namespace SuperDigital.Conta.Applicacao.Testes.Requests
 {
     public class CriarClienteCommandHandlerTestes
     {
+
+        public CriarClienteCommandHandlerTestes()
+        {
+            
+        }
         [Fact]
         public async Task Quando_Cliente_Existe_Retornar_Erro()
         {

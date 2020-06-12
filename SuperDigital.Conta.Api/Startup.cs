@@ -18,6 +18,7 @@ using System;
 using System.Linq;
 using System.Reflection;
 using System.Text;
+using FluentValidation.AspNetCore;
 using SuperDigital.Conta.Api.Validadores;
 
 namespace SuperDigital.Conta.Api
@@ -37,12 +38,14 @@ namespace SuperDigital.Conta.Api
             services
                 .AddControllers()
                 .AddControllersAsServices()
+                .AddFluentValidation()
                 .AddMetrics();
 
             services.Configure<KestrelServerOptions>(options =>
             {
                 options.AllowSynchronousIO = true;
             });
+
 
             services.AddValidators();
 

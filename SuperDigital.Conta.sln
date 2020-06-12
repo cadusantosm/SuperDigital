@@ -11,13 +11,19 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SuperDigital.Conta.Dominio"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SuperDigital.Conta.Infraestrutura", "SuperDigital.Conta.Infraestrutura\SuperDigital.Conta.Infraestrutura.csproj", "{63F0E065-EFF9-4E65-911C-F3851389E2D7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SuperDigital.Conta.Api.Testes", "SuperDigital.Conta.Api.Testes\SuperDigital.Conta.Api.Testes.csproj", "{78E53C97-748F-4F65-A5BC-C4B6BB68B595}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SuperDigital.Conta.Api.Testes", "SuperDigital.Conta.Api.Testes\SuperDigital.Conta.Api.Testes.csproj", "{78E53C97-748F-4F65-A5BC-C4B6BB68B595}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SuperDigital.Conta.Applicacao.Testes", "SuperDigital.Conta.Applicacao.Testes\SuperDigital.Conta.Applicacao.Testes.csproj", "{7182DA0A-8BEB-41BB-B000-48C2B51467E5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SuperDigital.Conta.Applicacao.Testes", "SuperDigital.Conta.Applicacao.Testes\SuperDigital.Conta.Applicacao.Testes.csproj", "{7182DA0A-8BEB-41BB-B000-48C2B51467E5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SuperDigital.Conta.Dominio.Testes", "SuperDigital.Conta.Dominio.Testes\SuperDigital.Conta.Dominio.Testes.csproj", "{8E9E5943-0F0C-4894-9BB3-D2E1FE68220F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SuperDigital.Conta.Dominio.Testes", "SuperDigital.Conta.Dominio.Testes\SuperDigital.Conta.Dominio.Testes.csproj", "{8E9E5943-0F0C-4894-9BB3-D2E1FE68220F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SuperDigital.Conta.Infraestrutura.Testes", "SuperDigital.Conta.Infraestrutura.Testes\SuperDigital.Conta.Infraestrutura.Testes.csproj", "{6730D2EF-BD8D-4072-A4EE-003357F323F3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SuperDigital.Conta.Infraestrutura.Testes", "SuperDigital.Conta.Infraestrutura.Testes\SuperDigital.Conta.Infraestrutura.Testes.csproj", "{6730D2EF-BD8D-4072-A4EE-003357F323F3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{BC577A0D-EAAC-40F1-B0D3-A53C9A212868}"
+	ProjectSection(SolutionItems) = preProject
+		docker-compose.yml = docker-compose.yml
+		SuperDigital.Conta.Dockerfile = SuperDigital.Conta.Dockerfile
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

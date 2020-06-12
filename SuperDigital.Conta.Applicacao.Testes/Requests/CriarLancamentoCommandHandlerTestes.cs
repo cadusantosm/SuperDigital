@@ -212,7 +212,5 @@ namespace SuperDigital.Conta.Applicacao.Testes.Requests
 
             await Assert.ThrowsAsync<ContaCorrenteSemSaldoParaEfetuarLancamento>(async () => await task);
         }
-
-        
     }
 }

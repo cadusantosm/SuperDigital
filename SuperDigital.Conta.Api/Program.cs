@@ -27,11 +27,9 @@ namespace SuperDigital.Conta.Api
                     .ConfigureWebHostDefaults(webBuilder =>
                     {
                         webBuilder.UseStartup<Startup>();
-                        webBuilder.ConfigureAppMetricsHostingConfiguration(options =>
-                            options.MetricsEndpoint = "/internal/metrics");
                         webBuilder.ConfigureKestrel(options => options.AllowSynchronousIO = true);
-                    })
-                ;
+                    }).ConfigureAppMetricsHostingConfiguration(options =>
+                        options.MetricsEndpoint = "/internal/metrics");
         }
     }
 }

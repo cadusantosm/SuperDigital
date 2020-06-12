@@ -1,0 +1,879 @@
+﻿{
+    
+  "openapi":  "3.0.1",
+    
+  "info":  {
+        
+    "title":  "SuperDigital Conta Corrente Api",
+        
+    "version":  "v1"
+  
+    },
+    
+  "paths":  {
+        
+    "/api/Autenticacao":  {
+            
+      "post":  {
+                
+        "tags":  [
+                    
+          "Autenticacao"
+        
+                ],
+                
+        "summary":  "Realiza autenticação do cliente",
+                
+        "requestBody":  {
+                    
+          "description":  "Dados do cliente",
+                    
+          "content":  {
+                        
+            "application/json":  {
+                            
+              "schema":  {
+                                
+                "$ref":  "#/components/schemas/AutenticarClienteParameters"
+              
+                            }
+            
+                        },
+                        
+            "text/json":  {
+                            
+              "schema":  {
+                                
+                "$ref":  "#/components/schemas/AutenticarClienteParameters"
+              
+                            }
+            
+                        },
+                        
+            "application/*+json":  {
+                            
+              "schema":  {
+                                
+                "$ref":  "#/components/schemas/AutenticarClienteParameters"
+              
+                            }
+            
+                        }
+          
+                    }
+        
+                },
+                
+        "responses":  {
+                    
+          "200":  {
+                        
+            "description":  "Success",
+                        
+            "content":  {
+                            
+              "application/json":  {
+                                
+                "schema":  {
+                                    
+                  "$ref":  "#/components/schemas/Result"
+                
+                                }
+              
+                            }
+            
+                        }
+          
+                    }
+        
+                }
+      
+            }
+    
+        },
+        
+    "/api/Cliente":  {
+            
+      "post":  {
+                
+        "tags":  [
+                    
+          "Cliente"
+        
+                ],
+                
+        "summary":  "Realiza cadastro de um novo cliente",
+                
+        "requestBody":  {
+                    
+          "description":  "Dados do cliente",
+                    
+          "content":  {
+                        
+            "application/json":  {
+                            
+              "schema":  {
+                                
+                "$ref":  "#/components/schemas/CriarClienteParameters"
+              
+                            }
+            
+                        },
+                        
+            "text/json":  {
+                            
+              "schema":  {
+                                
+                "$ref":  "#/components/schemas/CriarClienteParameters"
+              
+                            }
+            
+                        },
+                        
+            "application/*+json":  {
+                            
+              "schema":  {
+                                
+                "$ref":  "#/components/schemas/CriarClienteParameters"
+              
+                            }
+            
+                        }
+          
+                    }
+        
+                },
+                
+        "responses":  {
+                    
+          "201":  {
+                        
+            "description":  "Success",
+                        
+            "content":  {
+                            
+              "application/json":  {
+                                
+                "schema":  {
+                                    
+                  "$ref":  "#/components/schemas/Result"
+                
+                                }
+              
+                            }
+            
+                        }
+          
+                    }
+        
+                }
+      
+            }
+    
+        },
+        
+    "/api/ContaCorrente":  {
+            
+      "post":  {
+                
+        "tags":  [
+                    
+          "ContaCorrente"
+        
+                ],
+                
+        "summary":  "Realiza cadastro de uma nova conta corrente (Auth)",
+                
+        "requestBody":  {
+                    
+          "description":  "Dados da conta corrente",
+                    
+          "content":  {
+                        
+            "application/json":  {
+                            
+              "schema":  {
+                                
+                "$ref":  "#/components/schemas/CriarContaCorrenteParameters"
+              
+                            }
+            
+                        },
+                        
+            "text/json":  {
+                            
+              "schema":  {
+                                
+                "$ref":  "#/components/schemas/CriarContaCorrenteParameters"
+              
+                            }
+            
+                        },
+                        
+            "application/*+json":  {
+                            
+              "schema":  {
+                                
+                "$ref":  "#/components/schemas/CriarContaCorrenteParameters"
+              
+                            }
+            
+                        }
+          
+                    }
+        
+                },
+                
+        "responses":  {
+                    
+          "201":  {
+                        
+            "description":  "Success",
+                        
+            "content":  {
+                            
+              "application/json":  {
+                                
+                "schema":  {
+                                    
+                  "$ref":  "#/components/schemas/Result"
+                
+                                }
+              
+                            }
+            
+                        }
+          
+                    },
+                    
+          "401":  {
+                        
+            "description":  "Unauthorized"
+          
+                    },
+                    
+          "403":  {
+                        
+            "description":  "Forbidden"
+          
+                    }
+        
+                },
+                
+        "security":  [
+                    
+          {
+                        
+            "oauth2":  [
+                             
+                        ]
+          
+                    }
+        
+                ]
+      
+            },
+            
+      "get":  {
+                
+        "tags":  [
+                    
+          "ContaCorrente"
+        
+                ],
+                
+        "summary":  "Obtém saldo de um cliente (Auth)",
+                
+        "responses":  {
+                    
+          "200":  {
+                        
+            "description":  "Success",
+                        
+            "content":  {
+                            
+              "application/json":  {
+                                
+                "schema":  {
+                                    
+                  "$ref":  "#/components/schemas/Result"
+                
+                                }
+              
+                            }
+            
+                        }
+          
+                    },
+                    
+          "401":  {
+                        
+            "description":  "Unauthorized"
+          
+                    },
+                    
+          "403":  {
+                        
+            "description":  "Forbidden"
+          
+                    }
+        
+                },
+                
+        "security":  [
+                    
+          {
+                        
+            "oauth2":  [
+                             
+                        ]
+          
+                    }
+        
+                ]
+      
+            }
+    
+        },
+        
+    "/api/Lancamento":  {
+            
+      "post":  {
+                
+        "tags":  [
+                    
+          "Lancamento"
+        
+                ],
+                
+        "summary":  "Realiza um lançamento entre contas (SOMENTE LANÇAMENTOS ENTRE CONTAS CORRENTES DISPONÍVEL) (Auth)",
+                
+        "requestBody":  {
+                    
+          "description":  "Dados para efetuar a lançamento entre contas",
+                    
+          "content":  {
+                        
+            "application/json":  {
+                            
+              "schema":  {
+                                
+                "$ref":  "#/components/schemas/CriarLancamentoParameters"
+              
+                            }
+            
+                        },
+                        
+            "text/json":  {
+                            
+              "schema":  {
+                                
+                "$ref":  "#/components/schemas/CriarLancamentoParameters"
+              
+                            }
+            
+                        },
+                        
+            "application/*+json":  {
+                            
+              "schema":  {
+                                
+                "$ref":  "#/components/schemas/CriarLancamentoParameters"
+              
+                            }
+            
+                        }
+          
+                    }
+        
+                },
+                
+        "responses":  {
+                    
+          "201":  {
+                        
+            "description":  "Success",
+                        
+            "content":  {
+                            
+              "application/json":  {
+                                
+                "schema":  {
+                                    
+                  "$ref":  "#/components/schemas/Result"
+                
+                                }
+              
+                            }
+            
+                        }
+          
+                    },
+                    
+          "401":  {
+                        
+            "description":  "Unauthorized"
+          
+                    },
+                    
+          "403":  {
+                        
+            "description":  "Forbidden"
+          
+                    }
+        
+                },
+                
+        "security":  [
+                    
+          {
+                        
+            "oauth2":  [
+                             
+                        ]
+          
+                    }
+        
+                ]
+      
+            }
+    
+        }
+  
+    },
+    
+  "components":  {
+        
+    "schemas":  {
+            
+      "AutenticarClienteParameters":  {
+                
+        "type":  "object",
+                
+        "properties":  {
+                    
+          "documento":  {
+                        
+            "type":  "string",
+                        
+            "nullable":  true
+          
+                    },
+                    
+          "senha":  {
+                        
+            "type":  "string",
+                        
+            "nullable":  true
+          
+                    }
+        
+                },
+                
+        "additionalProperties":  false
+      
+            },
+            
+      "HttpStatusCode":  {
+                
+        "enum":  [
+                    
+          100,
+                    
+          101,
+                    
+          102,
+                    
+          103,
+                    
+          200,
+                    
+          201,
+                    
+          202,
+                    
+          203,
+                    
+          204,
+                    
+          205,
+                    
+          206,
+                    
+          207,
+                    
+          208,
+                    
+          226,
+                    
+          300,
+                    
+          301,
+                    
+          302,
+                    
+          303,
+                    
+          304,
+                    
+          305,
+                    
+          306,
+                    
+          307,
+                    
+          308,
+                    
+          400,
+                    
+          401,
+                    
+          402,
+                    
+          403,
+                    
+          404,
+                    
+          405,
+                    
+          406,
+                    
+          407,
+                    
+          408,
+                    
+          409,
+                    
+          410,
+                    
+          411,
+                    
+          412,
+                    
+          413,
+                    
+          414,
+                    
+          415,
+                    
+          416,
+                    
+          417,
+                    
+          421,
+                    
+          422,
+                    
+          423,
+                    
+          424,
+                    
+          426,
+                    
+          428,
+                    
+          429,
+                    
+          431,
+                    
+          451,
+                    
+          500,
+                    
+          501,
+                    
+          502,
+                    
+          503,
+                    
+          504,
+                    
+          505,
+                    
+          506,
+                    
+          507,
+                    
+          508,
+                    
+          510,
+                    
+          511
+        
+                ],
+                
+        "type":  "integer",
+                
+        "format":  "int32"
+      
+            },
+            
+      "Result":  {
+                
+        "type":  "object",
+                
+        "properties":  {
+                    
+          "success":  {
+                        
+            "type":  "boolean",
+                        
+            "description":  "Indica se a ação foi concluída com êxito."
+          
+                    },
+                    
+          "message":  {
+                        
+            "type":  "string",
+                        
+            "description":  "Mensagem de erro, se houver.",
+                        
+            "nullable":  true
+          
+                    },
+                    
+          "code":  {
+                        
+            "$ref":  "#/components/schemas/HttpStatusCode"
+          
+                    }
+        
+                },
+                
+        "additionalProperties":  false
+      
+            },
+            
+      "CriarClienteParameters":  {
+                
+        "type":  "object",
+                
+        "properties":  {
+                    
+          "nome":  {
+                        
+            "type":  "string",
+                        
+            "nullable":  true
+          
+                    },
+                    
+          "documento":  {
+                        
+            "type":  "string",
+                        
+            "nullable":  true
+          
+                    },
+                    
+          "senha":  {
+                        
+            "type":  "string",
+                        
+            "nullable":  true
+          
+                    }
+        
+                },
+                
+        "additionalProperties":  false
+      
+            },
+            
+      "TipoConta":  {
+                
+        "enum":  [
+                    
+          0,
+                    
+          1,
+                    
+          2,
+                    
+          3
+        
+                ],
+                
+        "type":  "integer",
+                
+        "format":  "int32"
+      
+            },
+            
+      "CriarContaCorrenteParameters":  {
+                
+        "type":  "object",
+                
+        "properties":  {
+                    
+          "agencia":  {
+                        
+            "type":  "string",
+                        
+            "description":  "Agência - 5 números",
+                        
+            "nullable":  true
+          
+                    },
+                    
+          "numeroConta":  {
+                        
+            "type":  "string",
+                        
+            "description":  "13 Números",
+                        
+            "nullable":  true
+          
+                    },
+                    
+          "digitoVerificadorConta":  {
+                        
+            "type":  "integer",
+                        
+            "description":  "2 Alfanuméricos",
+                        
+            "format":  "int32"
+          
+                    },
+                    
+          "numeroDocumento":  {
+                        
+            "type":  "string",
+                        
+            "description":  "CPF - Com ou sem pontuações",
+                        
+            "nullable":  true
+          
+                    },
+                    
+          "nomeLegal":  {
+                        
+            "type":  "string",
+                        
+            "description":  "Máximo de 30 caracteres, somente letras",
+                        
+            "nullable":  true
+          
+                    },
+                    
+          "valor":  {
+                        
+            "type":  "number",
+                        
+            "description":  "Valor mínimo para abertura da conta",
+                        
+            "format":  "double"
+          
+                    },
+                    
+          "tipoConta":  {
+                        
+            "$ref":  "#/components/schemas/TipoConta"
+          
+                    }
+        
+                },
+                
+        "additionalProperties":  false
+      
+            },
+            
+      "CriarLancamentoParameters":  {
+                
+        "type":  "object",
+                
+        "properties":  {
+                    
+          "agenciaFavorecido":  {
+                        
+            "type":  "string",
+                        
+            "description":  "Agência - 5 números",
+                        
+            "nullable":  true
+          
+                    },
+                    
+          "numeroContaFavorecido":  {
+                        
+            "type":  "string",
+                        
+            "description":  "13 Números",
+                        
+            "nullable":  true
+          
+                    },
+                    
+          "digitoVerificadorFavorecido":  {
+                        
+            "type":  "integer",
+                        
+            "description":  "2 Alfanuméricos",
+                        
+            "format":  "int32"
+          
+                    },
+                    
+          "numeroDocumentoFavorecido":  {
+                        
+            "type":  "string",
+                        
+            "description":  "CPF - Com ou sem pontuações",
+                        
+            "nullable":  true
+          
+                    },
+                    
+          "nomeLegalFavorecido":  {
+                        
+            "type":  "string",
+                        
+            "description":  "Máximo de 30 caracteres, somente letras",
+                        
+            "nullable":  true
+          
+                    },
+                    
+          "valorLancamento":  {
+                        
+            "type":  "number",
+                        
+            "description":  "Valor do lançamento a ser realizado",
+                        
+            "format":  "double"
+          
+                    },
+                    
+          "tipoContaFavorecido":  {
+                        
+            "$ref":  "#/components/schemas/TipoConta"
+          
+                    }
+        
+                },
+                
+        "additionalProperties":  false
+      
+            }
+    
+        },
+        
+    "securitySchemes":  {
+            
+      "oauth2":  {
+                
+        "type":  "apiKey",
+                
+        "description":  "Autorização JWT via header usando bearer scheme. Exemplo: \"bearer {token}\"",
+                
+        "name":  "Autorizacao",
+                
+        "in":  "header"
+      
+            }
+    
+        }
+  
+    }
+
+}

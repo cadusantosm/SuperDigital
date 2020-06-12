@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Marten" Version="3.11.0" />
+    <PackageReference Include="Dapper" Version="2.0.35" />
+
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SuperDigital.Conta.Domain\SuperDigital.Conta.Dominio.csproj" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <NoWarn>1701;1702;1591</NoWarn>
+  </PropertyGroup>
+</Project>

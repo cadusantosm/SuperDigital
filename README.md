@@ -110,11 +110,9 @@ A diferença entre as duas comunicação é que na comunicação síncrona se fa
 Na comunicação síncrona a ordem do fluxo de dados é importante para que haja consistência na comunicação, sendo assim é transmitido um pacote por vez.
  
 Na comunicação assíncrona é usado um "carimbo" em cada pacote a ser enviado para o remetente saber a ordem dos pacotes.
- - Em linguagens de programação como C# o .NET o modelo assíncrono é feito com threads já
- 
+
 O melhor cenário para comunicação síncrona é com tarefas que devem ser executadas em sequência.
  
 Deve-se evitar trabalhar de forma síncrona quando a execução a execução for longa, de maneira geral é I/O (Acesso a banco, arquivo, execuções longas) deve se usar comunicação assíncrona.
- 
- 
-Em linguagens como C# são utilizados threads para comunicação assíncrona, já em linguagens como elixir
+  
+>> Em linguagens como C# são utilizados threads para comunicação assíncrona, já em linguagens como elixir se utiliza processos.

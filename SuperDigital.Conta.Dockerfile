@@ -1,17 +1,17 @@
-FROM mcr.microsoft.com/dotnet/core/sdk:3.1 AS build-env
-WORKDIR /app
+FROM mcr.microsoft.com/dotnet/core/sdk:3.1 AS builder
 
+COPY . /
+WORKDIR SuperDigital.Conta.Api
+RUN dotnet restore --no-cache
+RUN dotnet publish --output /app/ -c Release --no-restore
 
-# Copy everything else and build
-COPY . ./
-RUN dotnet publish -c Release -p:PublishDir=out
-
-# Build runtime image
 FROM mcr.microsoft.com/dotnet/core/aspnet:3.1
 WORKDIR /app
+COPY --from=builder /app .
 
-COPY --from=build-env /app/SuperDigital.Conta.Api/out ./superdigital_conta_api
-RUN ls
+ENV ASPNETCORE_ENVIRONMENT Development
+ENV DOTNET_RUNNING_IN_CONTAINER true
+ENV ASPNETCORE_URLS=http://*:80
 
-
+EXPOSE 80
 ENTRYPOINT ["dotnet", "SuperDigital.Conta.Api.dll"]

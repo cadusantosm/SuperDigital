@@ -1,4 +1,4 @@
-# Serviço responsável por efetuar lançamentos entre duas contas corrente
+# Serviço responsável por efetuar lançamentos entre duas contas correntes
 
 
 ## Autenticação [Funcionalidade para autenticar cliente]

@@ -88,15 +88,15 @@ A ideia da arquitetura é ter independência entre os demais serviços que comp�
  
 Desenvolvimento baseado em micro-serviços possuí muitos desafios, dentre eles estão:
  
-Consistência das informações
+* Consistência das informações
 Desenvolver com micro-serviços requer a autonomia no armazenamento dos dados e o grande desafio aqui é garantir a consistência entre os dados de todos os serviços.
  
-Comunicação entre serviços
+* Comunicação entre serviços
 A comunicação entre serviços é um tema complexo, pois há diversas abordagens para se tratar do assunto. Alguns padrões podem garantir ou remover benefícios do microsserviços.
-Comunicação HTTP: é uma abordagem simples, mas cria pontos de falha e a perda de resiliência do serviço
-Comunicação via Mensagem: garante mais resiliência e baixo acoplamento entre os serviços que irão se comunicar.
+- Comunicação HTTP: é uma abordagem simples, mas cria pontos de falha e a perda de resiliência do serviço
+- Comunicação via Mensagem: garante mais resiliência e baixo acoplamento entre os serviços que irão se comunicar.
  
-Resiliência
+* Resiliência
 Caso um micro-serviço venha falhar, é importante o processo não parar. O sistema deve continuar operando e esse serviço que falhou voltar o mais rápido possível.
 Há diversas abordagens para aumentar a resiliência de um serviço como:
 * Monitoramento

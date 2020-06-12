@@ -77,7 +77,7 @@ POST: api/ContaCorrente
  
 Ele foi criado por Eric Evans (Inclusive tenho o livro dele, mas não consegui mastigar todo ainda) onde o mesmo juntou diversos approach de desenvolvimento de software para criar e evoluir o DDD.
  
-A importância na estratégia de desenvolvimento com essa abordagem é a proximidade do do desenvolvimento focado no negócio, ou seja, no domínio.
+A importância na estratégia de desenvolvimento com essa abordagem é a proximidade do desenvolvimento focado no negócio, ou seja, no domínio.
  
  
 ## O que é e como funciona uma arquitetura baseada em micro serviços?

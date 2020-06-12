@@ -82,7 +82,7 @@ A importância na estratégia de desenvolvimento com essa abordagem é a proximi
  
 ## O que é e como funciona uma arquitetura baseada em micro serviços?
  
-Uma arquitetura baseada em micro-serviços consiste em generalização o sistema em pequenas partes dando a cada parte uma responsabilidade (fazer aquela uma coisa muito bem).
+Uma arquitetura baseada em micro-serviços consiste em granularizar o sistema em pequenas partes dando a cada parte uma responsabilidade (fazer aquela uma coisa muito bem).
  
 A ideia da arquitetura é ter independência entre os demais serviços que compõem esse software, com isso temos diversos benefícios como: autonomia para escalar, autonomia para os times que irão desenvolvê-los, entrega continua com foco no negócio, monitoramento independente…
  

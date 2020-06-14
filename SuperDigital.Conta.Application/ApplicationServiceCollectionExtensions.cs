@@ -24,8 +24,8 @@ namespace SuperDigital.Conta.Applicacao
 
             services.AddSingleton<IDocumentStoreResolver>(_ =>
                 new DocumentStoreResolver(
-                    configuration.GetConnectionString("ReadableDocumentStore"),
-                    configuration.GetConnectionString("WritableDocumentStore")));
+                    configuration.GetConnectionString("Readable"),
+                    configuration.GetConnectionString("Writable")));
 
             services.AddSingleton<IContaCorrenteRepositorio, ContaCorrenteRepositorio>();
             services.AddSingleton<ILancamentoRepositorio, LancamentoRepositorio>();

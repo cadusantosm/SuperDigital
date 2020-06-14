@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="$USER_HOME$/.nuget/packages/microsoft.net.test.sdk/16.2.0/build/netcoreapp1.0" t="Include">
+      <e p="Microsoft.NET.Test.Sdk.Program.cs" t="Include" />
+    </e>
+    <e p="$USER_HOME$/.nuget/packages/microsoft.net.test.sdk/16.6.1/build/netcoreapp2.1" t="Include">
+      <e p="Microsoft.NET.Test.Sdk.Program.cs" t="Include" />
+    </e>
+    <e p="$USER_HOME$/.nuget/packages/xunit.runner.visualstudio/2.4.0/build/netcoreapp1.0/xunit.runner.reporters.netcoreapp10.dll" t="Include" />
+    <e p="$USER_HOME$/.nuget/packages/xunit.runner.visualstudio/2.4.0/build/netcoreapp1.0/xunit.runner.utility.netcoreapp10.dll" t="Include" />
+    <e p="$USER_HOME$/.nuget/packages/xunit.runner.visualstudio/2.4.0/build/netcoreapp1.0/xunit.runner.visualstudio.dotnetcore.testadapter.dll" t="Include" />
+    <e p="$USER_HOME$/.nuget/packages/xunit.runner.visualstudio/2.4.1/build/netcoreapp1.0/xunit.runner.reporters.netcoreapp10.dll" t="Include" />
+    <e p="$USER_HOME$/.nuget/packages/xunit.runner.visualstudio/2.4.1/build/netcoreapp1.0/xunit.runner.utility.netcoreapp10.dll" t="Include" />
+    <e p="$USER_HOME$/.nuget/packages/xunit.runner.visualstudio/2.4.1/build/netcoreapp1.0/xunit.runner.visualstudio.dotnetcore.testadapter.dll" t="Include" />
+    <e p="$USER_HOME$/.nuget/packages/xunit.runner.visualstudio/2.4.2/build/netcoreapp2.1/xunit.runner.reporters.netcoreapp10.dll" t="Include" />
+    <e p="$USER_HOME$/.nuget/packages/xunit.runner.visualstudio/2.4.2/build/netcoreapp2.1/xunit.runner.utility.netcoreapp10.dll" t="Include" />
+    <e p="$USER_HOME$/.nuget/packages/xunit.runner.visualstudio/2.4.2/build/netcoreapp2.1/xunit.runner.visualstudio.dotnetcore.testadapter.dll" t="Include" />
+    <e p="$USER_HOME$/Library/Caches/Rider2019.3/extResources" t="IncludeRecursive" />
+    <e p="$USER_HOME$/Library/Caches/Rider2019.3/resharper-host/local/Transient/ReSharperHost/v193/SolutionCaches/_SuperDigital.Conta.516006379.00" t="ExcludeRecursive" />
+    <e p="$APPLICATION_CONFIG_DIR$/consoles/db" t="IncludeRecursive" />
+    <e p="$APPLICATION_CONFIG_DIR$/extensions" t="IncludeRecursive" />
+    <e p="$APPLICATION_CONFIG_DIR$/scratches" t="IncludeRecursive" />
+    <e p="$PROJECT_DIR$" t="IncludeFlat">
+      <e p="docker-compose.yml" t="Include" />
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="Solution Items" t="Include" />
+      <e p="SuperDigital.Conta.Api" t="IncludeRecursive">
+        <e p="appsettings.Development.json" t="Include" />
+        <e p="appsettings.json" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Contracts" t="Include">
+          <e p="Autenticar" t="Include">
+            <e p="AutenticarClienteParameters.cs" t="Include" />
+            <e p="AutenticarClienteResult.cs" t="Include" />
+          </e>
+          <e p="CriarCliente" t="Include">
+            <e p="CriarClienteParameters.cs" t="Include" />
+            <e p="CriarClienteResult.cs" t="Include" />
+          </e>
+          <e p="CriarConta" t="Include">
+            <e p="CriarContaCorrenteParameters.cs" t="Include" />
+            <e p="CriarContaCorrenteResult.cs" t="Include" />
+          </e>
+          <e p="CriarLancamento" t="Include">
+            <e p="CriarLancamentoParameters.cs" t="Include" />
+            <e p="CriarLancamentoResult.cs" t="Include" />
+          </e>
+          <e p="MappingProfile.cs" t="Include" />
+          <e p="ObterSaldoContaCorrente" t="Include">
+            <e p="ObterSaldoContaCorrenteResult.cs" t="Include" />
+          </e>
+        </e>
+        <e p="Controllers" t="Include">
+          <e p="AutenticacaoController.cs" t="Include" />
+          <e p="ClienteController.cs" t="Include" />
+          <e p="ContaCorrenteController.cs" t="Include" />
+          <e p="LancamentoController.cs" t="Include" />
+        </e>
+        <e p="Middlewares" t="Include">
+          <e p="ErrorHandlingMiddleware.cs" t="Include" />
+        </e>
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.1" t="Include">
+              <e p="ThisAssembly.GitInfo.g.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Program.cs" t="Include" />
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+          <e p="launchSettings.json" t="Include" />
+        </e>
+        <e p="SharedContracts" t="Include">
+          <e p="Result.cs" t="Include" />
+        </e>
+        <e p="Startup.cs" t="Include" />
+        <e p="SuperDigital.Conta.Api.csproj" t="IncludeRecursive" />
+        <e p="SuperDigital.Conta.Api.xml" t="Include" />
+        <e p="Validadores" t="Include">
+          <e p="PostAutenticarClienteParametersValidation.cs" t="Include" />
+          <e p="PostCriarClienteParametersValidation.cs" t="Include" />
+          <e p="PostCriarContaCorrenteParametersValidation.cs" t="Include" />
+          <e p="PostCriarLancamentoParametersValidation.cs" t="Include" />
+          <e p="ValidationsExtensions.cs" t="Include" />
+        </e>
+      </e>
+      <e p="SuperDigital.Conta.Api.Testes" t="IncludeRecursive">
+        <e p="ApprovalTests" t="Include">
+          <e p="ContractApprovalTests.cs" t="Include" />
+          <e p="ContractApprovalTests.SwaggerContract.approved.json" t="Include" />
+        </e>
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="MappingProfileTests.cs" t="Include" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.1" t="Include">
+              <e p="SuperDigital.Conta.Api.Testes.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="SuperDigital.Conta.Api.Testes.csproj" t="IncludeRecursive" />
+      </e>
+      <e p="SuperDigital.Conta.Applicacao.Testes" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="MappingProfileTests.cs" t="Include" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.1" t="Include">
+              <e p="SuperDigital.Conta.Applicacao.Testes.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Requests" t="Include">
+          <e p="AutenticarClienteCommandHandlerTestes.cs" t="Include" />
+          <e p="CriarClienteCommandHandlerTestes.cs" t="Include" />
+          <e p="CriarContaCorrenteCommandHandlerTestes.cs" t="Include" />
+          <e p="CriarLancamentoCommandHandlerTestes.cs" t="Include" />
+          <e p="ObterSaldoContaCorrenteCommandHandlerTestes.cs" t="Include" />
+        </e>
+        <e p="SuperDigital.Conta.Applicacao.Testes.csproj" t="IncludeRecursive" />
+      </e>
+      <e p="SuperDigital.Conta.Application" t="IncludeRecursive">
+        <e p="ApplicationServiceCollectionExtensions.cs" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.1" t="Include">
+              <e p="SuperDigital.Conta.Applicacao.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Requests" t="Include">
+          <e p="AutenticarCliente" t="Include">
+            <e p="AutenticarClienteCommand.cs" t="Include" />
+            <e p="AutenticarClienteCommandHandler.cs" t="Include" />
+            <e p="AutenticarClienteCommandResult.cs" t="Include" />
+          </e>
+          <e p="CriarCliente" t="Include">
+            <e p="CriarClienteCommand.cs" t="Include" />
+            <e p="CriarClienteCommandHandler.cs" t="Include" />
+            <e p="CriarClienteCommandResult.cs" t="Include" />
+            <e p="MappingProfile.cs" t="Include" />
+          </e>
+          <e p="CriarContaCorrente" t="Include">
+            <e p="CriarContaCorrenteCommand.cs" t="Include" />
+            <e p="CriarContaCorrenteCommandHandler.cs" t="Include" />
+            <e p="CriarContaCorrenteCommandResult.cs" t="Include" />
+            <e p="MappingProfile.cs" t="Include" />
+          </e>
+          <e p="CriarLancamento" t="Include">
+            <e p="CriarLancamentoCommand.cs" t="Include" />
+            <e p="CriarLancamentoCommandHandler.cs" t="Include" />
+            <e p="CriarLancamentoCommandResult.cs" t="Include" />
+            <e p="MappingProfile.cs" t="Include" />
+          </e>
+          <e p="ObterSaldoContaCorrente" t="Include">
+            <e p="ObterSaldoContaCorrenteCommand.cs" t="Include" />
+            <e p="ObterSaldoContaCorrenteCommandHandler.cs" t="Include" />
+            <e p="ObterSaldoContaCorrenteCommandResult.cs" t="Include" />
+          </e>
+        </e>
+        <e p="Servicos" t="Include">
+          <e p="LancamentoServico.cs" t="Include" />
+        </e>
+        <e p="SuperDigital.Conta.Applicacao.csproj" t="IncludeRecursive" />
+        <e p="SuperDigital.Conta.Applicacao.xml" t="Include" />
+      </e>
+      <e p="SuperDigital.Conta.Dockerfile" t="Include" />
+      <e p="SuperDigital.Conta.Domain" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="DomainException.cs" t="Include" />
+        <e p="Entidades" t="Include">
+          <e p="Cliente.cs" t="Include" />
+          <e p="ContaCorrente.cs" t="Include" />
+          <e p="Lancamento.cs" t="Include" />
+          <e p="TipoConta.cs" t="Include" />
+          <e p="TipoLancamento.cs" t="Include" />
+          <e p="TipoTransacao.cs" t="Include" />
+        </e>
+        <e p="Excecoes" t="Include">
+          <e p="ClienteJaCadastradoException.cs" t="Include" />
+          <e p="ClienteNaoAutenticadoException.cs" t="Include" />
+          <e p="ClienteNaoPossuiContaCorrenteException.cs" t="Include" />
+          <e p="ContaCorrenteJaExisteException.cs" t="Include" />
+          <e p="ContaCorrenteNaoEncontradaException.cs" t="Include" />
+          <e p="ContaCorrenteSemSaldoParaEfetuarLancamento.cs" t="Include" />
+          <e p="ContaOrigemDeveSerDiferenteDaContaDestinoException.cs" t="Include" />
+          <e p="ErroParaAbrirContaCorrenteException.cs" t="Include" />
+          <e p="LancamentosNaoRealizadosException.cs" t="Include" />
+          <e p="PermitidoAbrirSomenteContaCorrenteException.cs" t="Include" />
+          <e p="SaldoContaNaoAtualizadoException.cs" t="Include" />
+        </e>
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.1" t="Include">
+              <e p="SuperDigital.Conta.Dominio.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Repositorios" t="Include">
+          <e p="IClienteRepositorio.cs" t="Include" />
+          <e p="IContaCorrenteRepositorio.cs" t="Include" />
+          <e p="ILancamentoRepositorio.cs" t="Include" />
+        </e>
+        <e p="Servicos" t="Include">
+          <e p="ILancamentoServico.cs" t="Include" />
+        </e>
+        <e p="SuperDigital.Conta.Dominio.csproj" t="IncludeRecursive" />
+      </e>
+      <e p="SuperDigital.Conta.Dominio.Testes" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.1" t="Include">
+              <e p="SuperDigital.Conta.Dominio.Testes.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="SuperDigital.Conta.Dominio.Testes.csproj" t="IncludeRecursive" />
+      </e>
+      <e p="SuperDigital.Conta.Infraestrutura" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="DocumentStore" t="Include">
+          <e p="DocumentStoreResolver.cs" t="Include" />
+          <e p="IDocumentStoreResolver.cs" t="Include" />
+        </e>
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.1" t="Include">
+              <e p="SuperDigital.Conta.Infraestrutura.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Repositorios" t="Include">
+          <e p="ClienteRepositorio.cs" t="Include" />
+          <e p="ContaCorrenteRepositorio.cs" t="Include" />
+          <e p="LancamentoRepositorio.cs" t="Include" />
+        </e>
+        <e p="SuperDigital.Conta.Infraestrutura.csproj" t="IncludeRecursive" />
+        <e p="Util" t="Include">
+          <e p="ClaimsExtensions.cs" t="Include" />
+          <e p="StringExtensions.cs" t="Include" />
+          <e p="Utility.cs" t="Include" />
+        </e>
+      </e>
+      <e p="SuperDigital.Conta.Infraestrutura.Testes" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.1" t="Include">
+              <e p="SuperDigital.Conta.Infraestrutura.Testes.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="SuperDigital.Conta.Infraestrutura.Testes.csproj" t="IncludeRecursive" />
+      </e>
+      <e p="SuperDigital.Conta.sln" t="IncludeFlat" />
+    </e>
+  </component>
+</project>

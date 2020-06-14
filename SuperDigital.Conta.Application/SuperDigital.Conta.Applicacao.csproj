@@ -8,24 +8,25 @@
     <DocumentationFile>C:\Users\cadus\source\repos\SuperDigital.Conta\SuperDigital.Conta.Application\SuperDigital.Conta.Applicacao.xml</DocumentationFile>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="App.Metrics.Abstractions" Version="3.2.0" />
+    <PackageReference Include="App.Metrics.Abstractions" Version="4.0.0" />
     <PackageReference Include="App.Metrics.AspNetCore.Tracking" Version="3.2.0" />
     <PackageReference Include="MediatR.Behaviors.Logging.AspNetCore" Version="1.0.3" />
     <PackageReference Include="MediatR.Behaviors.Metrics.AppMetrics" Version="1.0.3" />
     <PackageReference Include="MediatR.Behaviors.ResponseCaching" Version="1.0.0" />
-    <PackageReference Include="Microsoft.Extensions.Caching.Abstractions" Version="3.1.3" />
-    <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="3.1.3" />
-    <PackageReference Include="Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions" Version="3.1.3" />
-    <PackageReference Include="Microsoft.Extensions.Http" Version="3.1.3" />
-    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="3.1.3" />
+    <PackageReference Include="Microsoft.Extensions.Caching.Abstractions" Version="3.1.5" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="3.1.5" />
+    <PackageReference Include="Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions" Version="3.1.5" />
+    <PackageReference Include="Microsoft.Extensions.Http" Version="3.1.5" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="3.1.5" />
     <PackageReference Include="MediatR" Version="8.0.1" />
     <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="8.0.0" />
-    <PackageReference Include="Microsoft.Extensions.Options" Version="3.1.3" />
-    <PackageReference Include="Microsoft.Extensions.Options.ConfigurationExtensions" Version="3.1.3" />
-    <PackageReference Include="Microsoft.Extensions.Options.DataAnnotations" Version="3.1.3" />
+    <PackageReference Include="Microsoft.Extensions.Options" Version="3.1.5" />
+    <PackageReference Include="Microsoft.Extensions.Options.ConfigurationExtensions" Version="3.1.5" />
+    <PackageReference Include="Microsoft.Extensions.Options.DataAnnotations" Version="3.1.5" />
     <PackageReference Include="AutoMapper" Version="9.0.0" />
     <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="7.0.0" />
     <PackageReference Include="Microsoft.AspNetCore.WebUtilities" Version="2.2.0" />
+    <PackageReference Include="System.Text.Json" Version="4.7.2" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\SuperDigital.Conta.Infraestrutura\SuperDigital.Conta.Infraestrutura.csproj" />

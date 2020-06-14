@@ -4,8 +4,9 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Marten" Version="3.11.0" />
+    <PackageReference Include="Marten" Version="3.12.1" />
     <PackageReference Include="Dapper" Version="2.0.35" />
+    <PackageReference Include="System.Text.Json" Version="4.7.2" />
 
   </ItemGroup>
   <ItemGroup>

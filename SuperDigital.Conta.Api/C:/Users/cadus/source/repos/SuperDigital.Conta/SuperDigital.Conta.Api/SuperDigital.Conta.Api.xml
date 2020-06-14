@@ -1,0 +1,190 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SuperDigital.Conta.Api</name>
+    </assembly>
+    <members>
+        <member name="P:SuperDigital.Conta.Api.Contracts.CriarConta.CriarContaCorrenteParameters.Agencia">
+            <summary>
+            Agência - 5 números
+            </summary>
+        </member>
+        <member name="P:SuperDigital.Conta.Api.Contracts.CriarConta.CriarContaCorrenteParameters.NumeroConta">
+            <summary>
+            13 Números
+            </summary>
+        </member>
+        <member name="P:SuperDigital.Conta.Api.Contracts.CriarConta.CriarContaCorrenteParameters.DigitoVerificadorConta">
+            <summary>
+            2 Alfanuméricos
+            </summary>
+        </member>
+        <member name="P:SuperDigital.Conta.Api.Contracts.CriarConta.CriarContaCorrenteParameters.NumeroDocumento">
+            <summary>
+            CPF - Com ou sem pontuações
+            </summary>
+        </member>
+        <member name="P:SuperDigital.Conta.Api.Contracts.CriarConta.CriarContaCorrenteParameters.NomeLegal">
+            <summary>
+            Máximo de 30 caracteres, somente letras
+            </summary>
+        </member>
+        <member name="P:SuperDigital.Conta.Api.Contracts.CriarConta.CriarContaCorrenteParameters.Valor">
+            <summary>
+            Valor mínimo para abertura da conta
+            </summary>
+        </member>
+        <member name="P:SuperDigital.Conta.Api.Contracts.CriarConta.CriarContaCorrenteParameters.TipoConta">
+            <summary>
+            Tipo da conta
+            </summary>
+        </member>
+        <member name="P:SuperDigital.Conta.Api.Contracts.CriarLancamento.CriarLancamentoParameters.AgenciaFavorecido">
+            <summary>
+            Agência - 5 números
+            </summary>
+        </member>
+        <member name="P:SuperDigital.Conta.Api.Contracts.CriarLancamento.CriarLancamentoParameters.NumeroContaFavorecido">
+            <summary>
+            13 Números
+            </summary>
+        </member>
+        <member name="P:SuperDigital.Conta.Api.Contracts.CriarLancamento.CriarLancamentoParameters.DigitoVerificadorFavorecido">
+            <summary>
+            2 Alfanuméricos
+            </summary>
+        </member>
+        <member name="P:SuperDigital.Conta.Api.Contracts.CriarLancamento.CriarLancamentoParameters.NumeroDocumentoFavorecido">
+            <summary>
+            CPF - Com ou sem pontuações
+            </summary>
+        </member>
+        <member name="P:SuperDigital.Conta.Api.Contracts.CriarLancamento.CriarLancamentoParameters.NomeLegalFavorecido">
+            <summary>
+            Máximo de 30 caracteres, somente letras
+            </summary>
+        </member>
+        <member name="P:SuperDigital.Conta.Api.Contracts.CriarLancamento.CriarLancamentoParameters.ValorLancamento">
+            <summary>
+            Valor do lançamento a ser realizado
+            </summary>
+        </member>
+        <member name="P:SuperDigital.Conta.Api.Contracts.CriarLancamento.CriarLancamentoParameters.TipoContaFavorecido">
+            <summary>
+            Tipo da conta
+            </summary>
+        </member>
+        <member name="M:SuperDigital.Conta.Api.Controllers.AutenticacaoController.PostAsync(SuperDigital.Conta.Api.Contracts.Autenticar.AutenticarClienteParameters)">
+            <summary>
+            Realiza autenticação do cliente
+            </summary>
+            <param name="parameters">Dados do cliente</param>
+            <returns></returns>
+        </member>
+        <member name="M:SuperDigital.Conta.Api.Controllers.ClienteController.PostAsync(SuperDigital.Conta.Api.Contracts.CriarCliente.CriarClienteParameters)">
+            <summary>
+            Realiza cadastro de um novo cliente
+            </summary>
+            <param name="parameters">Dados do cliente</param>
+            <returns></returns>
+        </member>
+        <member name="M:SuperDigital.Conta.Api.Controllers.ContaCorrenteController.PostAsync(SuperDigital.Conta.Api.Contracts.CriarConta.CriarContaCorrenteParameters)">
+            <summary>
+            Realiza cadastro de uma nova conta corrente
+            </summary>
+            <param name="parameters">Dados da conta corrente</param>
+            <returns></returns>
+        </member>
+        <member name="M:SuperDigital.Conta.Api.Controllers.ContaCorrenteController.ObterSaldoAsync">
+            <summary>
+            Obtém saldo de um cliente
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SuperDigital.Conta.Api.Controllers.LancamentoController.Post(SuperDigital.Conta.Api.Contracts.CriarLancamento.CriarLancamentoParameters)">
+            <summary>
+            Realiza um lançamento entre contas (SOMENTE LANÇAMENTOS ENTRE CONTAS CORRENTES DISPONÍVEL)
+            </summary>
+            <param name="parameters">Dados para efetuar a lançamento entre contas</param>
+            <returns></returns>
+        </member>
+        <member name="P:SuperDigital.Conta.Api.SharedContracts.Result.Success">
+            <summary>
+            Indica se a ação foi concluída com êxito.
+            </summary>
+        </member>
+        <member name="P:SuperDigital.Conta.Api.SharedContracts.Result.Message">
+            <summary>
+            Mensagem de erro, se houver.
+            </summary>
+        </member>
+        <member name="P:SuperDigital.Conta.Api.SharedContracts.Result.Code">
+            <summary>
+            O código de status final.
+            </summary>
+        </member>
+        <member name="T:ThisAssembly">
+            <summary>Provides access to the current assembly information.</summary>
+        </member>
+        <member name="T:ThisAssembly.Git">
+            <summary>Provides access to the git information for the current assembly.</summary>
+        </member>
+        <member name="F:ThisAssembly.Git.IsDirty">
+            <summary>IsDirty: true</summary>
+        </member>
+        <member name="F:ThisAssembly.Git.IsDirtyString">
+            <summary>IsDirtyString: true</summary>
+        </member>
+        <member name="F:ThisAssembly.Git.Branch">
+            <summary>Branch: master</summary>
+        </member>
+        <member name="F:ThisAssembly.Git.Commit">
+            <summary>Commit: 13a214b</summary>
+        </member>
+        <member name="F:ThisAssembly.Git.Sha">
+            <summary>Sha: 13a214b485f1f39953f15c13d455ba4ff8bba912</summary>
+        </member>
+        <member name="F:ThisAssembly.Git.Commits">
+            <summary>Commits on top of base version: 15</summary>
+        </member>
+        <member name="F:ThisAssembly.Git.Tag">
+            <summary>Tag: </summary>
+        </member>
+        <member name="F:ThisAssembly.Git.BaseTag">
+            <summary>Base tag: </summary>
+        </member>
+        <member name="T:ThisAssembly.Git.BaseVersion">
+            <summary>Provides access to the base version information used to determine the <see cref="T:ThisAssembly.Git.SemVer" />.</summary>      
+        </member>
+        <member name="F:ThisAssembly.Git.BaseVersion.Major">
+            <summary>Major: 0</summary>
+        </member>
+        <member name="F:ThisAssembly.Git.BaseVersion.Minor">
+            <summary>Minor: 0</summary>
+        </member>
+        <member name="F:ThisAssembly.Git.BaseVersion.Patch">
+            <summary>Patch: 0</summary>
+        </member>
+        <member name="T:ThisAssembly.Git.SemVer">
+            <summary>Provides access to SemVer information for the current assembly.</summary>
+        </member>
+        <member name="F:ThisAssembly.Git.SemVer.Major">
+            <summary>Major: 0</summary>
+        </member>
+        <member name="F:ThisAssembly.Git.SemVer.Minor">
+            <summary>Minor: 0</summary>
+        </member>
+        <member name="F:ThisAssembly.Git.SemVer.Patch">
+            <summary>Patch: 15</summary>
+        </member>
+        <member name="F:ThisAssembly.Git.SemVer.Label">
+            <summary>Label: </summary>
+        </member>
+        <member name="F:ThisAssembly.Git.SemVer.DashLabel">
+            <summary>Label with dash prefix: </summary>
+        </member>
+        <member name="F:ThisAssembly.Git.SemVer.Source">
+            <summary>Source: Default</summary>
+        </member>
+    </members>
+</doc>

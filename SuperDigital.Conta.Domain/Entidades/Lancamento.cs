@@ -8,6 +8,8 @@ namespace SuperDigital.Conta.Dominio.Entidades
         public Guid IdentificadorLancamento { get; set; }
         public Guid IdentificadorTransacao { get; set; }
         public Guid IdentificadorConta { get; set; }
+        
+        // Aqui poderia ser um tipo especializado money (struct)
         public decimal Valor { get; set; }
         public TipoTransacao TipoTransacao { get; set; }
         public DateTimeOffset DataLancamento { get; set; }

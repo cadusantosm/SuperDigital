@@ -258,5 +258,8 @@
       </e>
       <e p="SuperDigital.Conta.sln" t="IncludeFlat" />
     </e>
+    <e p="C:\Users\cadus\source\repos\SuperDigital.Conta\SuperDigital.Conta.Api" t="Include">
+      <e p="SuperDigital.Conta.Api.xml" t="Include" />
+    </e>
   </component>
 </project>

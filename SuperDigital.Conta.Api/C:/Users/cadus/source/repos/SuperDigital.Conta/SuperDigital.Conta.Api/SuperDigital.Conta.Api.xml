@@ -139,13 +139,13 @@
             <summary>Branch: master</summary>
         </member>
         <member name="F:ThisAssembly.Git.Commit">
-            <summary>Commit: 13a214b</summary>
+            <summary>Commit: 9d93ab3</summary>
         </member>
         <member name="F:ThisAssembly.Git.Sha">
-            <summary>Sha: 13a214b485f1f39953f15c13d455ba4ff8bba912</summary>
+            <summary>Sha: 9d93ab3fe6a34463a5bdd6eb84ed26baa337bf82</summary>
         </member>
         <member name="F:ThisAssembly.Git.Commits">
-            <summary>Commits on top of base version: 15</summary>
+            <summary>Commits on top of base version: 17</summary>
         </member>
         <member name="F:ThisAssembly.Git.Tag">
             <summary>Tag: </summary>
@@ -175,7 +175,7 @@
             <summary>Minor: 0</summary>
         </member>
         <member name="F:ThisAssembly.Git.SemVer.Patch">
-            <summary>Patch: 15</summary>
+            <summary>Patch: 17</summary>
         </member>
         <member name="F:ThisAssembly.Git.SemVer.Label">
             <summary>Label: </summary>
